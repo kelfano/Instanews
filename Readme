@@ -1,0 +1,16 @@
+# Instanews App (Objectives)
+This is a single page news thread linked to a New York times server using the open API source. It used an ajax method to first send a request to the server then retrieve the information of the top stories and render those on the webpage.There are 6 different categories with 12 inclusive stories chosen for the user.
+
+
+##Technology used in the project
+-HTML
+-CSS (media Query, Sass features)
+-DOM model
+-Javascript (Class, Objects, function)
+-jQuery  (method such as ajax,.done,.each,.show,.hide)
+- Gulp files (set up the watch and browser sync function)
+-other files such as package.json & .eslintrc
+
+
+## What I learned
+In this project, I learnt how to using jquery method to set up a request from a browser to a server in order to retrieve information for the browser. Method included filtering and slicing the array elements into 12 elements only. I also learnt how to use Sass Features to declare the child elements inside the parents declaration function in order to make the code looks more tidy and runs more efficient. 
