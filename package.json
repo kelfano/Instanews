@@ -1,7 +1,7 @@
 {
   "name": "instanews",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a single page news thread linked to a New York times server using the open API source. It used an ajax method to first send a request to the server then retrieve the information of the top stories and render those on the webpage.There are 6 different categories with 12 inclusive stories chosen for the user.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,14 +17,11 @@
   },
   "homepage": "https://github.com/kelfano/Instanews#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^3.0.1",
-    "gulp-prettyerror": "^1.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
-  }
+    "css-loader": "^0.28.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {}
 }

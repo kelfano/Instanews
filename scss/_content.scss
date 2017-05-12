@@ -1,27 +1,24 @@
 body{
-  background-color:black;
-  font-family:'open_sanslight', Arial;
+  background-color: black;
+  color: #fff;
+  font-family: 'open_sans', Arial, sans-serif;
+  font-size: 16px;
+  height: 100vh;
 }
 
-p{
-  color:white;
-}
 
 .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height:100%;
+  height: 100%;
 }
 
 /*-----------------------site header---------------------*/
 .site-header{
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  height:auto;
+  height:100%;
   padding: 2rem;
 
     @include tablet{
@@ -34,54 +31,51 @@ p{
 
 }
 
-.moveToTop{
+.moveToTop {
+  height: 40%;
 
-  @include tablet{
-    height:auto;
-
-      img{
-        height:10vh;
-      }
+  @include tablet {
+    height: 15%; 
   }
 
 }
 
 .logo{
-  display:flex;
-  margin-bottom:1rem;
+  height: auto;
+  max-width: 100%;
  
-    img{
-      @include tablet{
-        height:5rem;
-        margin-right:4rem;
-      }
-
-      @include desktop{
-        height:5rem;
-        margin-right:4rem;
-      }
+  .nyt-logo-small{
+    height: 150px;
+    @include tablet{
+      height: 90px;
+    }
   }
+
 }
 
 .search-form{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inner-searchform{
-  font-size:1rem;
+  font-size: 1rem;
+}
+
+.inner-searchform select{
+  font-size: 1.2rem;
 }
 
 
 /*-----------------------story grid---------------------*/
-.loader{
-  height:10%;
-  width:10%;
-  position:relative;
-  left:40%;
-}
 
+.loader{
+  height: 10%;
+  width: 10%;
+  position: relative;
+  left: 40%;
+}
 
 .top-story{
   display:flex;
@@ -99,15 +93,15 @@ p{
 
     img{
       background-size: cover;
-      width:100%;
+      width: 100%;
     }
 
     p{
       position:absolute;
-      bottom:0rem;
+      bottom: 0rem;
       background-color: rgba(0,0,0,0.6);
       margin-bottom: 0rem;
-      padding:0.5rem;
+      padding: 0.5rem;
       display: flex;
       font-size: 1rem;
       @include tablet{
@@ -119,15 +113,16 @@ p{
         transition: all 1s ease .5s;
       }
   }
+}
 
 
 .article-list{
-  height:420px;  
+  height: 420px;  
   flex: 0 1 100%;
-  overflow:hidden;
+  overflow: hidden;
 
       @include tablet{
-        flex: 0 1 50%;
+        flex: 0 1 33.3%;
 
           &:hover {
             p {
@@ -147,55 +142,59 @@ p{
       }
 
     a{
-      height:100%;
+      height: 100%;
     }
     img{
-      height:420px;
+      height: 420px;
     }
     p{
-      line-height:1.75rem;
+      line-height: 1.75rem;
       font-size: 1rem;
+      color: #fff;
     }
 }
 
 .innerStoryItems{
-  background-size:cover;
-  background-position:center;
-  height:420px;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
 }
 
 .story-grid p{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .textbox{
-  width:100%;
+  width: 100%;
 }
 
 /*-------------------footer------------------------*/
 
 .site-footer{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    margin-top: 0;
+    margin-bottom:3rem;
+    text-align: center;
+    padding: 0 2rem;
+    color:#c2c2c2;
+    position:relative;
   
       @include desktop{
-        justify-content: flex-start;
-        flex-direction: row;
-        margin-left: 5rem;
+        text-align: left;
       }
 
   }
 
  .copyright p{
-   display:flex;
-   align-items:center;
    font-size: 1rem;
-
+   margin-top: 0;
+   margin-bottom: 0;
   }
-}
+
+.copyright span{
+  text-transform: uppercase;
+ }
+
 

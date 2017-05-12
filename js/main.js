@@ -13,7 +13,8 @@ $(function(){
         });
       
         $('.loader').show();
-        $('.site-header').addClass(".moveToTop");
+        $('.site-header').addClass('moveToTop');
+        $('.nyt-logo').addClass('nyt-logo-small');
 
           $.ajax({
             url: url,
@@ -40,10 +41,9 @@ $(function(){
                 
               }).fail(function() {
                 $('.top-story').append('Sorry, please try again!');
-                $('.loader').hide();
                 
               }). always(function(){
-                // this code will run regardless of success or failure
+                $('.loader').hide();
               });
 
           
