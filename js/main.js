@@ -1,6 +1,5 @@
 $(function(){
 
-
     $('.loader').hide()
 
     $('#section').change(function(){
